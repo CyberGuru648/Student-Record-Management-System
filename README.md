@@ -1,48 +1,58 @@
-\# Student Record Management System (C++)
+# 🎓 Student Record Management System (C++)
 
+A simple console-based Student Record Management System built using **C++** and **File Handling**.
 
+## 📌 Features
 
-This is a simple console-based project written in C++ using file handling.
+- Add Student
+- Display All Students
+- Search Student
+- Delete Student
+- Find Topper
+- Prevent Duplicate Roll Numbers
 
+## 🛠 Technologies Used
 
+- C++
+- File Handling
+- OOP Concepts
 
-\## Features
+## ▶️ How to Run
 
-\- Add Student
+Compile the program:
 
-\- Display Students
+```bash
+g++ Student_Record_Management_System.cpp -o student
+```
 
-\- Search Student
+Run the program:
 
-\- Delete Student
+```bash
+./student
+```
 
-\- Find Topper
+## 📂 Project Structure
 
-\- Prevent Duplicate Roll Numbers
+```
+Student-Record-Management-System
+│
+├── Student_Record_Management_System.cpp
+├── student.txt
+├── README.md
+└── .gitignore
+```
 
+## 📸 Example Menu
 
+```
+1. Add Student
+2. Display Students
+3. Search Student
+4. Delete Student
+5. Find Topper
+6. Exit
+```
 
-\## Concepts Used
+## 👨‍💻 Author
 
-\- Structures
-
-\- Functions
-
-\- File Handling
-
-\- Loops
-
-\- Conditionals
-
-
-
-\## File Structure
-
-Student\_Record\_Management\_System.cpp
-
-
-
-\## Author
-
-Dheeraj Singh
-
+Dheraj
