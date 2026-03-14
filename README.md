@@ -50,7 +50,8 @@ Student-Record-Management-System
 3. Search Student
 4. Delete Student
 5. Find Topper
-6. Exit
+6. Update Student Marks
+7. Exit
 ```
 
 ## 👨‍💻 Author
