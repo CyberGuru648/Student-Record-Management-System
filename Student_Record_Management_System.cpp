@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cstdio>
+#include <iomanip>
 using namespace std;
 
 struct student
@@ -63,11 +64,15 @@ void add_student()
         fout << s.name << endl;
         fout << s.roll << endl;
         fout << s.marks << endl;
+        cout << ".... Student Added Successfully .....\n";
     }
     fout.close();
-    cout << ".... Student Added Successfully .....\n";
 }
 
+void line()
+{
+    cout << "-----------------------------------------------\n";
+}
 void display()
 {
     student s;
@@ -79,15 +84,28 @@ void display()
         return;
     }
 
-    cout << "\t\t\tName\t\tRoll\tMarks\n";
+    // cout << "\t\t\tName\t\tRoll\tMarks\n";
+
+    line();
+    cout << "| " << left << setw(20) << "Name"
+         << "| " << setw(10) << "Roll"
+         << "| " << setw(10) << "Marks"
+         << "|\n";
+
+    line();
 
     while (getline(fin, s.name))
     {
         fin >> s.roll;
         fin >> s.marks;
         fin.ignore();
-        cout << "\n\t\t\t" << s.name << "\t" << s.roll << "\t" << s.marks << endl;
+        // cout << "\n\t\t\t" << s.name << "\t" << s.roll << "\t" << s.marks << endl;
+        cout << "| " << left << setw(20) << s.name
+             << "| " << setw(10) << s.roll
+             << "| " << setw(10) << s.marks
+             << "| \n";
     }
+    line();
 
     fin.close();
 }
